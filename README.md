@@ -17,3 +17,7 @@ nim c -r http
 ## Tips
 
 Files under js directory are for reference purpose.
+
+## References
+
+https://github.com/material-components/material-components-web/tree/master/packages/mdc-ripple
