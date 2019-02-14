@@ -1,4 +1,4 @@
-import karax / [karax, karaxdsl,vdom]
+import karax / [karax, karaxdsl,vdom, vstyles]
 import dom
 import math
 import jsffi, tables
@@ -78,10 +78,12 @@ proc blurHandler(e: Event, n:VNode) =
 proc focusHandler(e:Event, n:VNode) = 
     cast[Element](n.dom).classList.add cssClasses["BG_FOCUSED"]
 
+proc login(e:Event, n: VNode) = 
+    echo n.dom.nodeName
+
 proc createDom(): VNode = 
-    buildHtml tdiv(id = "wrap"):
-        tdiv(id = "main"):
-            button(class="mdc-button mdc-button--raised", onmousedown = ripple, onblur = blurHandler, onfocus = focusHandler):
+    buildHtml tdiv(style={width:"100px",height:"100px",margin:"auto",padding:"50px"}):
+            button(class="mdc-button mdc-button--raised", onclick = login, onmousedown = ripple, onblur = blurHandler, onfocus = focusHandler):
                 span(class = "mdc-button__label"):text "LOG IN"
                 
 setRenderer createDom
