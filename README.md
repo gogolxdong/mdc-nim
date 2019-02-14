@@ -6,6 +6,7 @@ nimble install karax
 
 nim js -d:release --hints:off button.nim
 
+
 ## httpserver
 
 nimble install jester
@@ -13,6 +14,6 @@ nimble install jester
 nim c -r http
 
 
-## js
+## Tips
 
 Files under js directory are for reference purpose.
