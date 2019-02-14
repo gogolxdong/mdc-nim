@@ -82,7 +82,7 @@ proc login(e:Event, n: VNode) =
     echo n.dom.nodeName
 
 proc createDom(): VNode = 
-    buildHtml tdiv(style={width:"100px",height:"200px",margin:"auto"}):
+    buildHtml tdiv(style={width:"100px",height:"200px",margin:"auto", padding:"auto"}):
             button(class="mdc-button mdc-button--raised", onclick = login, onmousedown = ripple, onblur = blurHandler, onfocus = focusHandler):
                 span(class = "mdc-button__label"):text "LOG IN"
                 
