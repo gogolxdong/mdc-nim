@@ -9,7 +9,7 @@
   background-color: var(--mdc-theme-primary, #6200ee);
   color: white;
   display: flex;
-  position: fixed;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
