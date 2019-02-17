@@ -1,0 +1,37 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/  
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */  
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */  
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/  
+input,select,textarea,button {vertical-align:middle}  
+input {outline:none;}  
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */  
+html,body {height: 100%}
+    
+body {background:#f5f5f5; margin:0 auto; }   /* 重置body 页面背景为白色 */  
+body,th,td,input,select,textarea,button {font-size:100%;line-height:1 ;font-family:"微软雅黑", "黑体","宋体";color:#000} /* 重置页面文字属性 */  
+/* a {color:#666;text-decoration:none}  重置链接a标签   */
+a:active, a:hover,a:link,a:visited {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */  
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */  
+caption {display:none;}    /* 重置表格标题为隐藏 */  
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */  
+img{vertical-align:top}  /* 图片在当前行内的垂直位置 */  
+
+.login {
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+    width: 27rem;
+    height: 35rem;
+    background: white;
+    border: 0px solid;
+    border-radius: 0.5625rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    box-shadow: -7px 7px 20px #484949;
+}
